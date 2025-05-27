@@ -117,4 +117,33 @@ h5{
 	
 }
 
+ #caption {
+font-size: 1.1em;
+
+}
+
+}
+
+
+
+ @media (max-width:392px){
+
+h3{
+	font-size: 18px;
+
+	
+}
+
+h5{
+	font-size: 15px;
+
+	
+}
+
+#caption {
+font-size: 1.1em;
+
+}
+
+
 }
