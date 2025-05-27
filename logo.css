@@ -75,8 +75,19 @@
 .logo .imgcon{
 	padding: 40px;
 }
-
-
 	
 }
+
+@media (max-width:392px){
+
+ .text{
+	font-size: 17px;
+}
+
+.logo .imgcon{
+	padding: 30px;
+}
+	
+}
+
 
