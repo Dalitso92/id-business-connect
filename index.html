@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="services.css">
+	<link rel="stylesheet" type="text/css" href="slide.css">
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet" type="text/css" href="logo.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>IDBusiness</title>
+
+</head>
+<body>
+
+
+
+
+<nav>
+	<label><img src="logo.jpg"></label>
+
+	<ul>
+		<li><a href="#services">services</a></li>
+		<li><a href="#about">about</a></li>
+		<li><a href="#contact">contact</a></li>
+	</ul>
+</nav>
+
+<br>	
+
+<div class="logo">
+
+	<div class="imgcon">
+		<img class="log" src="logo2.jpg">
+	</div>
+	<div class="text">Welcome to ID business connect!</div>
+	
+	
+</div>
+
+
+<br>	
+
+<h2 id="home">
+	Currently avaliable services 
+</h2>
+<center><hr></center>
+
+
+
+  <div class="gallery">
+
+
+<div id="slideshow-container">
+
+<h3>
+	Two Story Boarding house
+<h5>Location Jesmodine/Chudleigh close to Kalundu</h5>
+</h3>
+
+<img id="slide" src="1.jpg" alt="Slideshow Image">
+<p id="caption">contact :<a href="https://www.facebook.com/share/1P1ibXkQ9F/">Dalitso Shapi</a> </p>
+<div>
+<button onclick="prevSlide()">Previous</button>
+<button onclick="nextSlide()">Next</button>
+</div>
+</div>
+
+<script>
+const slides = [
+
+{ src: "1.jpg", caption: "installed Dstv" },
+{ src: "3.jpg", caption: "Backyard area" },
+{ src: "3.jpg", caption: "Dinning area" },
+{ src: "1.jpg", caption: "Studying area" },
+{ src: "8.jpg", caption: "Geyser" },
+{ src: "1.jpg", caption: "installed stoves" },
+{ src: "3.jpg", caption: "avaliable fridges" },
+{ src: "8.jpg", caption: "contant info 0973977377 " },
+{ src: "8.jpg", caption: "2 people in room k4000" },
+{ src: "3.jpg", caption: "4 people in room k3500" },
+{ src: "1.jpg", caption: "6 to 8 people in room k3000" },
+{ src: "1.jpg", caption: "Provides WIFI" }
+
+
+];
+let currentIndex = 0;
+function updateSlide() {
+document.getElementById("slide").src = slides[currentIndex].src;
+document.getElementById("caption").textContent = slides[currentIndex].caption;
+}
+function nextSlide() {
+currentIndex = (currentIndex + 1) % slides.length;
+updateSlide();
+}
+function prevSlide() {
+currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+updateSlide();
+}
+
+setInterval(nextSlide,15000);
+
+updateSlide();
+</script>
+
+
+
+
+<div id="slideshow-container">
+
+<h3>Web Development
+<h5>Connect with website designer</h5>
+</h3>
+
+<img id="slide" src="10.png" alt="Slideshow Image">
+
+<p id="caption">contact :<a href="https://dalitsoshapi.tiiny.io">Dalitso Shapi</a></p>
+<div>
+
+</div>
+</div>
+
+
+
+<div id="slideshow-container">
+
+<h3>Music Production
+<h5>get connected to music producer Ruuky</h5>
+</h3>
+
+<img id="slide" src="beats.png" alt="Slideshow Image">
+<p id="caption">contact :<a href="https://audiomack.com/ruuky92">Ruuky Beats</a></p>
+<div>
+
+</div>
+</div>
+
+
+
+
+<div id="slideshow-container">
+
+<h3>Mr Shapi Garden
+<h5>Checkout unique plants by local gardeners </h5>
+</h3>
+
+<img id="slide2" src="p1.jpg" alt="Slideshow Image">
+<p id="caption">contact :<a href="https://www.facebook.com/profile.php?id=61575572615261">Mrs Shapi</a></p>
+<div>
+<button onclick="prevSlide2()">Previous</button>
+<button onclick="nextSlide2()">Next</button>
+</div>
+</div>
+
+
+
+<script>
+const slides2 = [
+
+{ src: "p1.jpg"  },
+{ src: "p2.jpg"  },
+{ src: "p2.jpg"  },
+{ src: "p1.jpg"  },
+{ src: "p1.jpg"  }
+
+
+];
+let currentIndex2 = 0;
+function updateSlide2() {
+document.getElementById("slide2").src = slides2[currentIndex2].src;
+}
+function nextSlide2() {
+currentIndex2 = (currentIndex2 + 1) % slides2.length;
+updateSlide2();
+}
+function prevSlide2() {
+currentIndex2 = (currentIndex2 - 1 + slides2.length) % slides2.length;
+updateSlide2();
+}
+
+setInterval(nextSlide2,5000);
+
+updateSlide2();
+</script>
+
+
+
+
+  </div>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<h2 id="services">
+	Services 
+</h2>
+
+<center><hr></center>
+
+
+<section class="services-section">
+<div class="service">
+<h3>Client Acquisition</h3>
+<p>Generate leads and bring customers to your business through tailored outreach
+strategies.</p>
+<p class="example">“We bring clients to your door with customized outreach plans—perfect
+for any industry.”</p>
+</div>
+
+<div class="service">
+<h3>Digital Marketing</h3>
+<p>Enhance your online presence with services like social media management, email
+marketing, and SEO.</p>
+<p class="example">“Boost your online presence with our digital marketing solutions, from
+social media to SEO.”</p>
+</div>
+
+<div class="service">
+<h3>Brand Promotion</h3>
+<p>Increase visibility with engaging content such as blogs, videos, and digital ads.</p>
+<p class="example">“Get your brand noticed with creative promotion strategies designed for
+your audience.”</p>
+</div>
+<div class="service">
+<h3>Offline Marketing Support</h3>
+<p>Reach your audience through event promotion, flyer distribution, and local networking.</p>
+<p class="example">“Reach customers in the real world with our offline marketing
+expertise.”</p>
+</div>
+
+<div class="service">
+<h3>Partnership Development</h3>
+<p>Form valuable strategic partnerships that help you expand your business network.</p>
+<p class="example">“Grow your network with our help in connecting you to the right
+partners.”</p>
+</div>
+</section>
+
+
+<h2 id="about">
+	About ID business connect
+</h2>
+<center><hr></center>
+
+<center><div class="con">
+
+<p>
+	Founded in 2025, ID Business Connect is a dynamic team of innovative professionals dedicated to
+helping individuals and businesses thrive in the digital space. We specialize in a wide range of
+services including freelance content creation, graphic and web design, virtual assistance, digital
+product development, IT support, and online business solutions. Our mission is to connect ideas
+with execution—empowering our clients through practical, tech-driven strategies that deliver
+results. Whether you're starting from scratch or scaling up, we're here to move your business
+forward
+</p>
+</center>
+
+
+	
+</div>
+
+<br>
+<br>
+
+
+
+<div class="foot">
+
+	<div class="links">
+		<a href="https://www.facebook.com/share/1CPC3u6wwj/"><i class="fa-facebook"></i></a>
+		<a href=""><i class="instagram"></i></a>
+		<a href=""><i class="fa-tiktok"></i></a>
+	</div>
+
+	<div class="nav">
+		<ul>
+			<li><a href="#home">home</li>
+				<li><a href="#services">services</li>
+					<li><a href="#about">about</li>
+						<li><a href="#contacts">contacts</li>
+		</ul>
+	</div>
+	
+	
+	
+</div>
+
+<div class="designer">
+		<p>Copyright &copy2025; Designed by 
+
+			<span><a href="https://dalitsoshapi.tiiny.io">Dalitso Shapi</a></span>
+		</p>
+		
+	</div>
+
+
+
+</body>
+</html>

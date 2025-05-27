@@ -1,0 +1,87 @@
+
+.services-section {
+max-width: 1000px;
+margin: 50px auto;
+padding: 20px;
+box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+background-color: black;
+border-radius: 12px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+transition: transform 0.2s ease;
+color: white;
+}
+
+.service:hover {
+transform: translateY(-3px);
+}
+
+.service h3 {
+color: white;
+margin-top: 0;
+font-size: 38px;
+}
+.service p {
+font-size: 36px;
+margin: 10px 0;
+}
+
+.service .example {
+font-style: 30px;
+font-style: italic;
+color: #555;
+}
+
+
+@media (max-width:792px){
+
+.service h3 {
+font-size: 30px;
+}
+.service p {
+font-size: 25px;
+}
+
+.service .example {
+font-style: 25px;
+}
+
+	
+}
+
+
+@media (max-width:542px){
+
+.service h3 {
+font-size: 25px;
+}
+.service p {
+font-size: 17px;
+}
+
+.service .example {
+font-style: 15px;
+}
+
+	
+}
+
+@media (max-width:395px){
+
+.service h3 {
+font-size: 20px;
+}
+.service p {
+font-size: 15px;
+}
+
+.service .example {
+font-style: 12px;
+}
+
+	
+}

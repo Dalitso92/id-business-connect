@@ -1,0 +1,110 @@
+.con{
+	width: 1000px;
+	box-shadow: 0 12px 6px  rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px;
+}
+
+.con p{
+	width: 900px;
+	font-size: 30px;
+	color: white;
+	background: black;
+	border-radius: 5px;
+}
+
+@media (max-width:985px){
+	.con{
+		width: 900px ;
+	}
+	.con p{
+		width: 850px;
+	}
+}
+
+
+
+@media (max-width:935px){
+	.con{
+		width: 800px ;
+	}
+	.con p{
+		width: 750px;
+	}
+}
+
+
+
+@media (max-width:835px){
+	.con{
+		width: 700px ;
+	}
+	.con p{
+		width: 650px;
+	}
+}
+
+
+
+@media (max-width:745px){
+	.con{
+		width: 600px ;
+	}
+	.con p{
+		width: 550px;
+	}
+}
+
+
+
+@media (max-width:645px){
+	.con{
+		width: 500px ;
+	}
+	.con p{
+		width: 450px;
+	}
+}
+
+@media (max-width:545px){
+	.con{
+		width: 400px ;
+	}
+	.con p{
+		width: 350px;
+	}
+}
+
+
+@media (max-width:449px){
+	.con{
+		width: 350px ;
+	}
+	.con p{
+		width: 320px;
+		font-size: 17px;
+	}
+}
+
+@media (max-width:399px){
+	.con{
+		width: 300px ;
+	}
+	.con p{
+		width: 250px;
+		font-size: 12px;
+	}
+
+}
+
+@media (max-width:319px){
+	.con{
+		width: 300px ;
+	}
+	.con p{
+		width: 220px;
+		font-size: 14px;
+		margin-left: -25px;
+	}
+
+}
